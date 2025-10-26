@@ -23,7 +23,7 @@ public class quick_sort {
     public void sort(int[] arr, int start, int end) {
         if (start >= end - 1) return;
         int indx = partition(arr, start, end);
-        sort(arr, start, indx - 1);
+        sort(arr, start, indx);
         sort(arr, indx + 1, end);
     }
 
